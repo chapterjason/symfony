@@ -148,7 +148,7 @@ class InputDefinitionTest extends TestCase
         $definition->addArguments([$this->foo]);
 
         $this->assertTrue($definition->hasArgument('foo'), '->hasArgument() returns true if a InputArgument exists for the given name');
-        $this->assertFalse($definition->hasArgument('bar'), '->hasArgument() returns false if a InputArgument exists for the given name');
+        $this->assertFalse($definition->hasArgument('bar'), '->hasArgument() returns false if a InputArgument does not exists for the given name');
     }
 
     public function testGetArgumentRequiredCount()
